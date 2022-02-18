@@ -1,13 +1,14 @@
 module.exports = {
   development: {
     client: "sqlite3",
-    useNullAsDefault: true, // needed for sqlite
+
     connection: {
       filename: "./data/recipes.db3",
     },
     migrations: {
       directory: "./data/migrations",
     },
+    useNullAsDefault: true, // needed for sqlite
     seeds: {
       directory: "./data/seeds",
     },
